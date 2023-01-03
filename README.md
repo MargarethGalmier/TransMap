@@ -18,7 +18,8 @@ Foi necessária somente uma coleção de dados para o serviço disponibilizado.
 
 - Instituições
 
->     
+>     {
+      _id: ID
       nomeDaInstituição: String
       cidadeDaInstituição: String
       procedimentosOferecidos: String
@@ -26,7 +27,7 @@ Foi necessária somente uma coleção de dados para o serviço disponibilizado.
       telefone: String
       email: String
       site: String
-      
+      }
 
 
 [to-do]
