@@ -1,8 +1,5 @@
 # PROJETO TRANSMAP
-
-<p align="center">
-  <img width="429" height="127" ![image](https://github.com/MargarethGalmier/TransMap/blob/main/transmapheader.png)">
-</p>
+![image](https://github.com/MargarethGalmier/TransMap/blob/main/rsz_transmapheader.png?raw=true)
 
 # Introdução
 
