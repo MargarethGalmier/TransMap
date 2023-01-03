@@ -19,7 +19,6 @@ Foi necessária somente uma coleção de dados para o serviço disponibilizado.
 - Instituições
 
 >     
-      _id: ID
       nomeDaInstituição: String
       cidadeDaInstituição: String
       procedimentosOferecidos: String
