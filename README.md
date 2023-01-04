@@ -15,7 +15,7 @@ O projeto TRANSMAP tem como principal função compilar e disponibilizar informa
 - Deletar uma instituição caso necessário. 
 
 
-# SCHEMA: 
+# SCHEMA 
 Foi necessária somente uma coleção de dados para o serviço disponibilizado, utilizando do sequinte schema.
 
 
