@@ -35,7 +35,8 @@ Foi necessária somente uma coleção de dados para o serviço disponibilizado, 
 
 # TECNOLOGIAS UTILIZADAS
 
-- NodeJS
-- Postman 
-- MongoDB
-- Render
+- Javascript, como principal linguagem de programação.
+- NodeJS, como suporte à linguagem.
+- Postman, como plataforma para testes de rotas.
+- MongoDB, como banco de dados.
+- Render, para hospedar ao projeto em forma online.
