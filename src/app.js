@@ -6,13 +6,10 @@ const cors = require("cors");
 const mongoose = require("./database/dbConnect");
 const instituiçãoRoute = require("./routes/instituiçãoRoute.js");
 const app = express();
-mongoose.connect()
 app.use(express.json());
 app.use(cors());
-app.use("/transmap/instituição",instituiçãoRoute);
-app.use('/rota-dos-documentos', swaggerUi.serve, swaggerUi.setup(swaggerFile))
-app.get("/",(req, res) => {
-    res.send ({message:"Boas-vindas ao transmap."})
-} )
+mongoose.connect()  
+app.use("/transmap/instituiçãos", instituiçãoRoute);
+app.use("/rota-documentação", swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 module.exports = app;

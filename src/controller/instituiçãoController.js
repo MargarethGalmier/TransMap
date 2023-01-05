@@ -3,8 +3,8 @@ const instituiçãoModel = require("../models/instituiçãoModel");
 // - Filtros, o primeiro lista todas instituições, o segundo as encontra por modalidade de atendimento.
 const findAllInstituições = async (req, res) => {  
   try {
-    AllInstituições = await instituiçãoModel.find();
-    res.status(200).json(allOngs);
+    const AllInstituições = await instituiçãoModel.find();
+    res.status(200).json(AllInstituições);
   } catch {
     console.log(error);
     res.status(500).json({ message: error.message });
@@ -15,7 +15,7 @@ const findInstituiçãoPorModalidade = async (req, res) => {
   try {
   const filtroModalidade = req.query.modalidade.toLowerCase()
     findInstituiçãoPorModalidade = await instituiçãoModel.find({modalidade: filtroModalidade})
-    res.status(200).json(findmodali);
+    res.status(201).json(findInstituiçãoPorModalidade);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: error.message });
@@ -25,7 +25,7 @@ const findInstituiçãoPorModalidade = async (req, res) => {
 //Funções outras.
 const addNewInstituição = async (req, res) => {  
   try {
-    console.log
+
     const {
       _id:
       nomeDaInstituição,
@@ -36,7 +36,7 @@ const addNewInstituição = async (req, res) => {
       email,
       site,
     } = req.body;
-    const newInstituição = new InstituiçãoModel({
+    const newInstituição = new instituiçãoModel({
       _id:
       nomeDaInstituição,
       cidadeDaInstituição,
