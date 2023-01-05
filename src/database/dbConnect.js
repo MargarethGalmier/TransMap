@@ -1,7 +1,6 @@
-const DATABASE = process.env.DATABASE;
+const DATABASE = process.env.DATABASE_URI;
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
-mongoose.connect(`mongodb://127.0.0.1/my_database`)
 
   const connect = async () => {
   try {
@@ -15,3 +14,4 @@ mongoose.connect(`mongodb://127.0.0.1/my_database`)
   }
 };
 
+module.exports={connect}

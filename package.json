@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "swagger-autogen": "node swagger.js"},
+    "swagger-autogen": "node swagger.js"
+  },
   "author": "Margareth Galmier",
   "license": "ISC",
   "dependencies": {
@@ -14,6 +15,7 @@
     "express": "^4.18.2",
     "mongodb": "^4.13.0",
     "mongoose": "^6.8.2",
+    "node.js": "^0.0.1-security",
     "swagger-stats": "^0.99.4",
     "swagger-ui": "^4.15.5",
     "swagger-ui-express": "^4.6.0"

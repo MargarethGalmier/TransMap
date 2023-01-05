@@ -25,6 +25,7 @@ const findInstituiçãoPorModalidade = async (req, res) => {
 //Funções outras.
 const addNewInstituição = async (req, res) => {  
   try {
+    console.log
     const {
       _id:
       nomeDaInstituição,
